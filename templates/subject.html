@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ subject }}
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    <h1>{{ subject }}</h1>
+
+    <h2>Select Unit</h2>
+
+    <div class="subjects">
+
+        <div class="card">Unit 1</div>
+        <div class="card">Unit 2</div>
+        <div class="card">Unit 3</div>
+        <div class="card">Unit 4</div>
+        <div class="card">Unit 5</div>
+        <div class="card">Full Notes</div>
+
+    </div>
+
+    <br><br>
+
+    <a href="/">⬅ Back to Home</a>
+
+</div>
+
+{% endblock %}
