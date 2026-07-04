@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ subject }} - Unit {{ unit }}
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    <h1>{{ subject }}</h1>
+
+    <h2>Unit {{ unit }}</h2>
+
+
+    <p><strong>💰 Price:</strong> ₹{{ price }}</p>
+
+    <p>{{ description }}</p>
+
+    <br>
+
+    <button class="buy-btn">🛒 Buy Now</button>
+
+    <br><br>
+
+    <a href="/subject/web technology">⬅ Back</a>
+
+</div>
+
+{% endblock %}

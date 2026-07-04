@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}
-{{ subject }}
-{% endblock %}
+{% block title %}{{ subject }}{% endblock %}
 
 {% block content %}
 
@@ -10,22 +8,23 @@
 
     <h1>{{ subject }}</h1>
 
-    <h2>Select Unit</h2>
+    <div class="units">
 
-    <div class="subjects">
+        <a href="/subject/web technology/unit/1" class="card">Unit 1</a>
 
-        <div class="card">Unit 1</div>
-        <div class="card">Unit 2</div>
-        <div class="card">Unit 3</div>
-        <div class="card">Unit 4</div>
-        <div class="card">Unit 5</div>
-        <div class="card">Full Notes</div>
+        <a href="/subject/web technology/unit/2" class="card">Unit 2</a>
+
+        <a href="/subject/web technology/unit/3" class="card">Unit 3</a>
+
+        <a href="/subject/web technology/unit/4" class="card">Unit 4</a>
+
+        <a href="/subject/web technology/unit/5" class="card">Unit 5</a>
+
+        <a href="#" class="card full">
+            ⭐ Full Notes
+        </a>
 
     </div>
-
-    <br><br>
-
-    <a href="/">⬅ Back to Home</a>
 
 </div>
 
